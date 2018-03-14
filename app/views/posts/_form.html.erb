@@ -17,6 +17,11 @@
   </div>
 
   <div class="field">
+    <%= f.label :content %>
+    <%= f.text_field :content %>
+  </div>
+
+  <div class="field">
     <%= f.collection_check_boxes :tag_ids, Tag.all, :id, :name %>
   </div>
 
